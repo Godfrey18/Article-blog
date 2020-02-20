@@ -48,6 +48,19 @@ font-weight: bold;
 
 }
 
+span.online {
+  content: "\2713";
+  color:green;
+  font-size:1.5em;
+  margin-left: 3px;
+}
+span.offline {
+ content: "\2715";
+  color:red;
+  font-size:1.5em;
+  margin-left: 3px;
+}
+
 #logo:hover {
 
 color: #fff;
@@ -99,6 +112,15 @@ margin-top: 15px;
 font-size: 1.7em;
 
 background-color: black;
+
+align :center;
+
+margin:10px,15px,25px,35px;
+
+ border: 2px solid black;
+ padding: 15px;
+ border-radius: 25px;
+width:7em;
 
 }
 
