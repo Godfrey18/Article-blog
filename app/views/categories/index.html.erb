@@ -16,11 +16,11 @@
 
 <%= link_to "#{category.name}", category_path(category) %>
 
-</li> 
+</li>
+
+<li><small><%= pluralize(category.articles.count, "article") %></small></li>
 
 </div>
-
-
 
 </div>
 
@@ -31,4 +31,3 @@
 <%= will_paginate %>
 
 </div>
-

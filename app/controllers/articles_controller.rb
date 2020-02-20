@@ -69,8 +69,10 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
 
 	def add_params
 
-    params.require(:article).permit(:name,:discription)
-	end
+    params.require(:article).permit(:name, :discription, category_ids: [])
+
+end
+	
 	def require_same_user
 
 	if current_user != @articles.user and !current_user.admin?
