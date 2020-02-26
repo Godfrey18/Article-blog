@@ -42,9 +42,9 @@
 <%= simple_format(@articles.discription) %>
 <% if logged_in? && (current_user == @articles.user || current_user.admin?) %>
 
-<% if @article.categories.any? %>
+<% if @articles.categories.any? %>
 
-<p>Categories: <%= render @article.categories %></p>
+<p>Categories: <%= render @articles.categories %></p>
 
 <% end %>
 <div class="article-actions">
